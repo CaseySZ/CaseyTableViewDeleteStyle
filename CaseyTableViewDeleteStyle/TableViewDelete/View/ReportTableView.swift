@@ -21,11 +21,14 @@ extension UIView {
         self.isHidden = true
         self.moveToOffset(extraOffset: extraOffset, animated: animated, usingSpringWithStiffness: usingSpringWithStiffness, initialVelocity: initialVelocity)
         
+       
         let tableview = self.searchSuperViewOfClassName(NSStringFromClass(ReportTableView.classForCoder())) as? ReportTableView
         if tableview != nil {
             
             tableview?.deleteStatusView.frame = self.frame
         }
+            
+        
         
     }
     
