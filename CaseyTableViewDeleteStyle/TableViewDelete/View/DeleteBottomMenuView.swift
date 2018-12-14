@@ -11,8 +11,8 @@ import UIKit
 class DeleteBottomMenuView: UIView {
 
     
-    let allSelectButton = UIButton() // 没下滑线，是属性，button的事件由外配配置
-    let deleteButton = UIButton()  // 没下滑线，是属性，button的事件由外配配置
+    let allSelectButton = UIButton()
+    let deleteButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
